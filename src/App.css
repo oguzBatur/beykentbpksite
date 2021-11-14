@@ -1,38 +1,153 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+a{
+  text-decoration: none;
+}
+body{
+  background: linear-gradient(to right,rgba(142,38,139, 0.7),rgba(0,158,224, 0.9));
+
+}
+/** Navbar CSS  */
+.navbar-grid{
+  display: grid;
+  grid-template-rows: 0.1fr 1fr 0.1fr;
+  grid-template-columns: 0.1fr 1fr 0.1fr 0.1fr;
+  align-items: center;
+  justify-items: center;
+  background: linear-gradient(to right, #480048, #C04848);
+  color: white;
+  grid-column-gap: 20px;
+}
+.logo{
+  grid-row: 2/3;
+  grid-column: 2/3;
+  font-size: large;
+  justify-self: start;
+}
+
+.logo-img-link{
+  grid-row: 2/3;
+}
+
+.logo-img{
+  width: 85px;
+}
+
+.grid-about{
+  grid-row: 2/3;
+  grid-column: 4/5;
+
+}
+.grid-events{
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+.navbar-item{
+  height: 30px;
+  color: white;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+  font-size: 15px;
+}
+.navbar-item:hover{
+  color: rgb(197, 197, 197);
+}
+
+/** Greeter CSS  */
+
+.greeter{
+  background: linear-gradient(to right,rgba(142,38,139, 0.7),rgba(0,158,224, 0.9));
+  display: grid;
+  color: white;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 0.5fr 0.4fr .1fr .3fr 1fr;
   text-align: center;
+  align-items: center;
+  justify-items: center;
+  height: 100vh;
+}
+.greeter-gif{
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+}
+.greeter-join{
+  color: white;
+  grid-row: 4/5;
+  grid-column: 2/3;
+  font-size: larger;
+  background: linear-gradient(to right, #480048, #C04848);
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: 0.2s ease-in-out;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.greeter-join:hover{
+  color: rgb(190, 190, 190);
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.greeter-header{
+  grid-row: 2/3;
+  grid-column: 2/3;
 }
+.greeter-p{
+  grid-row: 3/4;
+  grid-column: 2/3;
+  font-size: large;
+  font-style: italic;
+}
+/* Socials CSS */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.socials{
+  display: grid;
+  color: black;
+  grid-template-columns: repeat(auto-fill, 300px);
+  grid-auto-flow: row;
+  color: white;
+  background: linear-gradient(to right,rgba(142,38,139, 0.7),rgba(0,158,224, 0.9));
+  grid-gap: 30px;
+  padding: 30px;
+  justify-content: center;
+}
+.social{
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: column;
+  background: linear-gradient(to right, #480048, #C04848);
+  text-align: center;
+  gap: 50px;
+  height: 400px;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.social:hover{
+  transform: scale(1.05);
+}
+.fab{
+  font-size: 100px
+}
+.middleman{
+  background: #883030;
+  height: 20vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/** Kart CSS */
+
+/** Etkinlikler CSS */
+
+.etkinlikler-header{
+  text-align: center;
+  margin: 12px;
+  color: white;
 }
