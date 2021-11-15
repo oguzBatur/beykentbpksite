@@ -8,8 +8,8 @@ const Navbar = () => {
                 <img className='logo-img' alt='logo' src={logo}/>
             </Link>
             <h1 className='logo'>Beykent Üniversitesi <br/> Bilgisayar Programcılığı Kulübü</h1>
-            <Link className='grid-about' to='/hakkinda'>
-                <button className='navbar-item'>Hakkında</button>
+            <Link className='grid-about' to='/iletisim'>
+                <button className='navbar-item'>İletişim</button>
             </Link>            
             <Link className='grid-events navbar-item' to='/etkinlikler'>
                 <button className='navbar-item'>Etkinlikler</button>
